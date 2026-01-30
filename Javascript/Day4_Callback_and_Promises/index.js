@@ -6,8 +6,6 @@ setTimeout(() => {
 }, 1000);                      // You’re saying: “Call this function later.”
 
 
-
-
 // Callback hell 
 getUser(id, (user) => {
   getOrders(user, (orders) => {
@@ -18,9 +16,6 @@ getUser(id, (user) => {
     });
   });
 });
-
-
-
 
 
 // Error handling
