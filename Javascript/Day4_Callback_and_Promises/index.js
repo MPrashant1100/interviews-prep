@@ -1,12 +1,11 @@
 ///// Callbacks  /////
 
-// Example - 
+// Example -
 setTimeout(() => {
-  console.log("Done");         // give a function to setTimeout,
-}, 1000);                      // You’re saying: “Call this function later.”
+  console.log("Done"); // give a function to setTimeout,
+}, 1000); // You’re saying: “Call this function later.”
 
-
-// Callback hell 
+// Callback hell
 getUser(id, (user) => {
   getOrders(user, (orders) => {
     getPayment(orders, (payment) => {
@@ -16,7 +15,6 @@ getUser(id, (user) => {
     });
   });
 });
-
 
 // Error handling
 doSomething((err, result) => {
@@ -30,3 +28,25 @@ doSomething((err, result) => {
     });
   }
 });
+
+/// Promises in Javascript -
+
+// Example -
+const p = new Promise((resolve, reject) => {
+  // “Here is a promise.
+  setTimeout(() => {
+    // It is pending now.
+    resolve("Done");  
+    // After 1 second, it will be fulfilled with the value 'Done'.”        
+  }, 1000);
+});
+
+
+
+// Promise {
+//   state: pending | fulfilled | rejected
+//   value: future result OR error
+//   handlers: then / catch / finally
+// }
+
+
