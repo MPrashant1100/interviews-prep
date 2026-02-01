@@ -50,3 +50,22 @@ const p = new Promise((resolve, reject) => {
 // }
 
 
+/////// Promise.all //////
+
+//  const res1 = await fetchA()     // 5s
+//  const res2 = await fetchB()     // 2s
+//  const res3 = await fetchC()     // 3s
+
+// -- Total time = 10s -- // 
+
+
+
+/////// Promise.all //////
+
+const [res1, res2, res3 ] = await Promise.all(
+   fetchA(),      
+   fetchB(),
+   fetchC(),
+)
+
+// -- Total time = Time taken by slowest one -- // 
