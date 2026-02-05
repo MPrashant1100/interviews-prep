@@ -1,4 +1,6 @@
+// Closures In Javascript
 
+// Example of closure
 
 
 function createCounter() {
