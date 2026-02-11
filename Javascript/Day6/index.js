@@ -12,3 +12,21 @@ function debounce(fn, delay) {
     }, delay);
   };
 }
+
+
+
+
+
+
+// using call?
+function debounce(fn, delay) {
+  let timer;
+
+  return function (...args) {
+    clearTimeout(timer);
+
+    timer = setTimeout(() => {
+      fn.call(this, ...args); //using call 
+    }, delay);
+  };
+}
