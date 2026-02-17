@@ -37,8 +37,29 @@ console.log(obj1.address.city); // Delhi
 
 
 
+// undefined and null
+
+let a;
+console.log(a); // undefined
+
+// let a = null;
 
 
+
+
+// follow-up question
+
+typeof undefined // "undefined"
+typeof null      // "object"
+
+
+
+
+
+// follow-up question
+
+null == undefined  // true
+null === undefined // false
 
 
 
