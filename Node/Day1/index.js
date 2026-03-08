@@ -34,4 +34,4 @@ app.get("/dashboard", authMiddleware, (req, res) => {
 // Middleware without next()
 app.use((req, res) => {
   res.send("Response handled here");
-});
+})
