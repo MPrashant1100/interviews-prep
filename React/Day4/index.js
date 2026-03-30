@@ -17,6 +17,7 @@ function App() {
   );
 }
 
+
 const result = useMemo(() => {
   return expensiveCalculation(count);
 }, [count]);
