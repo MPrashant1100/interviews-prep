@@ -19,9 +19,6 @@ function Parent() {
 }
 
 
-
-
-
 const handleClick = useCallback(() => {
   console.log("Clicked");
 }, []);
