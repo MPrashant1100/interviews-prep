@@ -22,3 +22,15 @@ function Parent() {
 const handleClick = useCallback(() => {
   console.log("Clicked");
 }, []);
+
+
+const [name, setName] = useState("");
+
+<input
+  value={name}
+  onChange={(e) => setName(e.target.value)}
+/>
+
+const inputRef = useRef();
+
+<input ref={inputRef} />
