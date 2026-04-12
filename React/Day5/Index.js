@@ -34,3 +34,28 @@ const [name, setName] = useState("");
 const inputRef = useRef();
 
 <input ref={inputRef} />
+
+
+
+
+
+
+
+useEffect(() => {
+  fetchData();
+}, []);
+
+
+
+
+
+
+function useFetch(url) {
+  // fetch logic
+}
+
+
+
+
+const data = useFetch("/api/users");
+
